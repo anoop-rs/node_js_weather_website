@@ -18,7 +18,8 @@ const forecast = (lat, long, place, callback) => {
                     summary: body.daily.data[0].summary,
                     temp: body.currently.temperature,
                     prob: body.currently.precipProbability,
-                    place
+                    place,
+                    visibility: body.currently.visibility,
                 })
             }
         }

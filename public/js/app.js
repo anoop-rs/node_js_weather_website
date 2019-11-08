@@ -13,7 +13,7 @@ weatherForm.addEventListener("submit", (e) => {
             if (data.errorMsg) {
                 messageOne.textContent = JSON.stringify(data.errorMsg)
             } else {
-                messageOne.textContent = "Summary : " + data.summary + "\nTemperature : " + data.temp + "\nProbablity : " + data.prob + "\nPlace : " + data.place
+                messageOne.textContent = "Summary : " + data.summary + "\nTemperature : " + data.temp + "\nProbablity : " + data.prob + "\nPlace : " + data.place + "\nVisibility : " + data.visibility
             }
 
         })

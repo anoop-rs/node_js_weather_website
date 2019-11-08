@@ -60,6 +60,7 @@ app.get("/weather", (req, res) => {
             summary,
             temp,
             prob,
+            visibility,
         } = {}) => {
             if (error) {
                 res.send({
@@ -70,7 +71,8 @@ app.get("/weather", (req, res) => {
                 summary,
                 temp,
                 prob,
-                place
+                place,
+                visibility
             })
         })
     })
